@@ -4,19 +4,18 @@
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu';
-    box-sizing: border-box;
 }
 main{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 5%;
 }
-/* *** HEADER *** */
+
 header {
     background-color: #2E948A;
 }
 
 .pagetop {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -56,155 +55,19 @@ nav ul li a {
     line-height: 55px;
 }
 
+/* *** TOPO DA PÁGINA *** */
 
-
-
-/* *** BANNER *** */
-
-.banner {
-    padding-top: 5%;
+.top {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2%;
 }
-.left h1,p,a{
-    margin:30px 0;
+.content,.topimg {
+    width: 40%;
+    margin: 0auto;
 }
-.left h1 {
-    font-size: 3.75rem;
-    color:#FF4081;
-    font-weight: 700;
-}
-.left p{
-    font-size: 1.688rem;
-    font-weight: 400;
-}
-.left a{
-    font-size: 1.688rem;
-    text-decoration: none;
-    color: #FF4081;
-    border: 1px solid #FF4081;
-    border-radius: 50px;
-    padding: 5px 30px;  
-}
+/* *** FOOTER *** */
 
-/* *** CURSOS *** */
-.cursosbg {
-    max-width: 2000px;
-    width: 100%;
-    background-color:#F6F6F6 ;
-}
-.cursos {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    
-}
-.cursos_bloco{
-    justify-content: space-between;
-    text-align: center;
-    padding: 4%;
-}
-.cursos_bloco h1{
-    font-size: 1.563rem;
-    color:#FF4081;
-}
-.cursos_bloco p{
-    font-size: 1.063rem;
-}
-.cursos_bloco img{
-    margin-bottom: 2rem;
-}
-.cursos_bloco a{
-    font-size: 1.25rem;
-}
-.cursos_bloco a{
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #FF4081;
-    border-radius: 50px;
-    padding: 5px 30px;  
-}
-
-/* *** DEPOIMENTOS *** */
-.titulo_depoimentos{
-    margin: 7% 5%; 
-    font-family: 'Nunito';
-    font-size: 2.313rem;
-    font-weight: 700;
-    color:#009688;
-}
-.depoimentos {
-    padding: 0 5%; 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;   
-}
-.blocodepoimento{
-    display:flex;
-    align-items: center;
-    max-width: 470px;
-    min-width:270px;
-    line-height: 20px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-.blocodepoimento img{
-    margin-right: 20px;
-    border: solid 1px  #FF4081;
-    border-radius: 50px;
-    padding:6px;
-}
-
-/* *** BLOG *** */
-.blog_titulo {
-    max-width: 100%;
-    padding: 7% 5%; 
-    font-family: 'Ubuntu';
-    font-size: 2rem;
-    font-weight: 700;
-    color:#009688;
-    background-color: #F6F6F6;
-}
-.blog{
-    background-color: #F6F6F6;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-around;
-    padding-bottom: 7%;
-
-}
-.blog_content {
-    width: 315px;
-    margin: 0 auto;
-    flex-wrap: wrap; 
-}
-.blog_content h4{
-    font-size: 1.363rem;
-    color:#2E948A;  
-}
-.blog_content p{
-    margin: 10px 10px;
-}
-.blog_content img{
-    max-width: 100%;
-    display:block;
-}
-.blog_link {
-    background-color: #F6F6F6;
-    font-size: 25px;
-    text-align: center;
-    padding: 80px 0;
-}
-.blog_link a{
-    text-decoration: none;
-    border: 1px solid #FF4081;
-    border-radius: 50px;
-    padding: 10px 30px;
-    color: #FF4081;
-}
-
-/* *** FOOTER **** */
 footer {
     display: flex;
     justify-content: space-around;
@@ -212,13 +75,6 @@ footer {
     margin:0 auto ;
     padding: 20px 0;
     background-color: #2E948A;
-}
-.footercontent {
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 5%;
 }
 .logo_content{
     align-items: flex-end;
@@ -280,10 +136,9 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    
     .blog_content{
-        text-align: left;
-        width: 70%;
-        margin: 0;
+        width: 100%;
     }
    
     
@@ -305,9 +160,6 @@ footer {
     .banner{
         margin:0 auto;
     }
-    .footer_links a{
-        display:none;
-   }
  
     
    
@@ -344,16 +196,18 @@ footer {
     width: 70%;
     margin: 0 auto;
 }
-.footercontent {
-    flex-direction: column;
-    width: 60%;
-   
+footer {
+   flex-direction: column;
+   width: 100%;
 }
-
+.footer_links a{
+     display:none;
+}
 .logo .footer_img img{
     width: 70px;
 }
 .logo .logo_content h3{
+    
     font-size: 30px;
     text-align: left;
 }
