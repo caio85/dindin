@@ -18,9 +18,8 @@ header {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
-    padding: 1% 3%;
+    padding: 1rem 2rem;
 }
 
 .logo {
@@ -64,7 +63,7 @@ main {
     width: 90%;
     margin: 0 auto;
     padding: 5% 0;
-
+    
 }
 
 .bannercontent {
@@ -103,7 +102,7 @@ main h1 {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    padding: 8% 2%;
+    padding: 8% 0;
 }
 
 .aulas_content {
@@ -127,7 +126,10 @@ main h1 {
 /* *** FOOTER **** */
 footer {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
+    padding: 20px 0;
     background-color: #2E948A;
 }
 
@@ -138,7 +140,6 @@ footer {
     max-width: 1440px;
     padding: 0 5%;
 }
-
 .logo_content h5 {
     font-size: 19px;
     font-weight: 300;
@@ -156,7 +157,6 @@ footer {
     font-weight: 500;
     color: #fff;
 }
-
 .footer_links {
     display: flex;
     margin: 0;
@@ -196,24 +196,24 @@ footer {
 
     .bannercontent {
         width: 100%;
-        padding: 0 1%;
-
-    }
-
-    .aulasbloco {
-        width: 90%;
-        flex-direction: column-reverse;
-        padding: 1% 0;
-    }
-
-    .aulas_content {
-        padding: 3%;
         margin: 0;
     }
 
-    .aulas_content p {
-        padding: 1%;
+    .aulasbloco {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
 
+    .aulas_content {
+        margin: 2% 0;
+    }
+
+    .aulasbloco {
+        padding: 5% 0;
+    }
+
+    .aulas_content {
+        padding-left: 5%;
     }
 
     .aulas_img img {
@@ -234,6 +234,8 @@ footer {
     nav ul li a {
         font-size: 15px;
     }
+
+  
 
     .footer_links a {
         display: none;
@@ -258,32 +260,18 @@ footer {
         font-size: 30px;
         line-height: 30px;
     }
-    .bannercontent h1{
-        font-size: 10vw;;
-    }
-    .bannercontent p,
-    .aulas_content p{
-        font-size: 3vw;;
-    }
-
     main {
         padding: 0 2%;
-
-    }
-    .aulas_bloco {
-        padding: 5% 0;
 
     }
     .aulasbloco .aulas_img img {
         object-fit: contain;
         width: 100%;
-        padding: 2%;
     }
 
     .footercontent {
         flex-direction: column;
         width: 60%;
-        margin:0 auto;
     }
 
     .logo .footer_img img {
@@ -299,4 +287,4 @@ footer {
         font-size: 15px;
     }
 
-}
+}  

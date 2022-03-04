@@ -186,14 +186,6 @@ footer {
 }
 
 @media (max-width: 910px) {
-    .cursos {
-        flex-direction: column;
-    }
-
-    .cursos_bloco {
-        text-align: left;
-    }
-
     #img {
         display: none;
     }
@@ -220,9 +212,6 @@ footer {
     .footer_links a {
         display: none;
     }
-
-    
-
 
 }
 

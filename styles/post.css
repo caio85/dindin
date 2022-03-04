@@ -82,7 +82,7 @@ nav ul li a {
     max-width: 100%;
     
 }
-.content {
+article {
     font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: 200;
@@ -90,7 +90,7 @@ nav ul li a {
     margin: 0 auto;
     margin-bottom: 20%;
 }
-.content h2 {
+article h2 {
     margin-top: 30px;
     color:#009688;
 }

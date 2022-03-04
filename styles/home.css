@@ -17,6 +17,8 @@ header {
 }
 
 .pagetop {
+    max-width:1440px;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -49,11 +51,10 @@ nav ul li a {
     font-size: 20px;
 }
 
-.logo h3 {
+h5 {
     font-size: 56px;
     font-weight: 500;
     color: #fff;
-    line-height: 55px;
 }
 
 
@@ -66,10 +67,10 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
 }
-.left h1,p,a{
+.left h2,p,a{
     margin:30px 0;
 }
-.left h1 {
+.left h2 {
     font-size: 3.75rem;
     color:#FF4081;
     font-weight: 700;
@@ -88,27 +89,23 @@ nav ul li a {
 }
 
 /* *** CURSOS *** */
-.cursosbg {
-    max-width: 2000px;
-    width: 100%;
-    background-color:#F6F6F6 ;
-}
+
 .cursos {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    
+    background-color:#F6F6F6 ;
 }
 .cursos_bloco{
     justify-content: space-between;
     text-align: center;
-    padding: 4%;
+    padding: 4% 2%;
 }
-.cursos_bloco h1{
-    font-size: 1.563rem;
+h4{
+    font-size: 25px;
     color:#FF4081;
 }
-.cursos_bloco p{
+.cursoscontent p{
     font-size: 1.063rem;
 }
 .cursos_bloco img{
@@ -127,9 +124,9 @@ nav ul li a {
 }
 
 /* *** DEPOIMENTOS *** */
-.titulo_depoimentos{
+h2 {
     margin: 7% 5%; 
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-size: 2.313rem;
     font-weight: 700;
     color:#009688;
@@ -157,7 +154,7 @@ nav ul li a {
 }
 
 /* *** BLOG *** */
-.blog_titulo {
+h3 {
     max-width: 100%;
     padding: 7% 5%; 
     font-family: 'Ubuntu';
@@ -230,7 +227,7 @@ footer {
     font-weight: 500;
     color: #fff;
 }
-.logo_content h5{
+h6{
     font-size: 19px;
     font-weight: 300;
     color: #fff;
@@ -267,8 +264,15 @@ footer {
     .cursos {
         flex-direction: column;
     }
-    .cursos_bloco{
-        text-align: left;
+   
+    .cursos_bloco {
+        display:flex;
+        width: 100%;
+        padding: 0;
+        
+    }
+    .cursoscontent {
+        padding: 5% 2%;
     }
     .depoimentos {
         flex-direction:column;
@@ -305,6 +309,7 @@ footer {
     .banner{
         margin:0 auto;
     }
+    
     .footer_links a{
         display:none;
    }
@@ -333,6 +338,12 @@ footer {
     font-size: 0.7rem ;
     margin: 0;
     padding: 2px 5px;
+}
+.cursosimg {
+    display:none
+}
+.cursos.content p{
+    margin: 0;
 }
 .titulo_depoimentos h2{
     font-size: 30px;

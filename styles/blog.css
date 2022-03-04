@@ -105,7 +105,7 @@ nav ul li a {
     background-color: #F6F6F6;
 }
 .posts {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -193,22 +193,6 @@ footer {
 }
 
 @media (max-width: 910px) {
-    .cursos {
-        flex-direction: column;
-    }
-
-    .cursos_bloco {
-        text-align: left;
-    }
-
-    .depoimentos {
-        flex-direction: column;
-    }
-
-    .blocodepoimento {
-        width: 100%;
-    }
-
     .blog {
         flex-direction: column;
         text-align: center;
@@ -246,8 +230,10 @@ footer {
     } .bannercontent {
         width: 100%;
     }
-    .post_content img {
-        width: 50%;
+    .posts_content img {
+        object-fit: contain;
+        width: 100%;
+        
         
     }
     .footer_links a {
@@ -284,9 +270,11 @@ footer {
         margin: 0;
         padding: 2px 5px;
     }
-
-    .titulo_depoimentos h2 {
-        font-size: 30px;
+    .bannercontent h1 {
+        font-size: 8vw;
+    }
+    .bannercontent p {
+        font-size: 3vw;
     }
 
     .blog_titulo h2 {
@@ -297,13 +285,13 @@ footer {
         width: 70%;
         margin: 0 auto;
     }
-
+    .posts_content p{
+        font-size: 3vw;
+    }
     footer {
         flex-direction: column;
         width: 100%;
     }
-
-    
 
     .logo .footer_img img {
         width: 70px;
